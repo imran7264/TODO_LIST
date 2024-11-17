@@ -7,7 +7,7 @@
 
 #main {
     border-radius: 6px;
-    background-image: url('../img/todo-list.jpg');
+    background: url('../img/todo-list.jpg');
     background-size: cover;
     transition: 0.2s linear;
     margin: 15px auto;
@@ -76,5 +76,14 @@
     background-color: rgba(0, 0, 0, 0.4);
    
   
+}
+
+@media screen and (max-width: 600px) {
+    #main #push {
+        padding: 2px 3px;
+    }
+    #counter {
+        font-size: 14px;
+    }
 }
 
