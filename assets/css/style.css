@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+} 
+
+#main {
+    border-radius: 6px;
+    background-image: url('../img/todo-list.jpg');
+    background-size: cover;
+    transition: 0.2s linear;
+    margin: 15px auto;
+    box-shadow: inset 1px 1px 9px black,
+                inset -1px -1px 9px black;
+    opacity: 0.8;
+    overflow: hidden;
+                
+
+}
+#main:hover {
+    filter: drop-shadow(4px 4px 8px);
+}
+#warning {
+    background-color: rgba(0, 0, 0, 0.9);
+   
+}
+
+#container {
+    max-height: 600px;
+    overflow: auto;
+}
+#tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#tasks #task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    text-transform: capitalize;
+    width: 100%;
+    
+}
+#tasks #task:hover {
+    background-color: rgb(245, 243, 243);
+}
+#tasks #task .taskname {
+    margin: 0px 10px;
+}
+#tasks .line {
+    border-left: 2px solid #0d6efd;
+}
+#tasks .line .taskname {
+    text-decoration: line-through;
+    /* color: #0d6efd; */
+}
+
+#tasks #task .delete {
+    cursor: pointer;
+    transition: 0.2s;
+    color: salmon;
+}
+#tasks #task .delete:hover {
+    color: red;
+}
+
+#counter {
+    background-color: rgba(0, 0, 0, 0.4);
+   
+  
+}
+
