@@ -79,6 +79,13 @@
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        height: 100vh;
+        background-color: black;
+        }
+    #main {
+        box-shadow: inset 1px 1px 9px white,
+    }
     #main #push {
         padding: 2px 3px;
     }
@@ -86,4 +93,3 @@
         font-size: 14px;
     }
 }
-
